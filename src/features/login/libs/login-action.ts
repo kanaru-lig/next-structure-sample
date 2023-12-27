@@ -1,12 +1,31 @@
 "use server";
 
-export async function loginAction(
-  prevState: string | undefined,
-  formData: FormData
-) {
-  const email = formData.get("email");
-  const password = formData.get("password");
-  console.log("submit", email, password);
+import { z } from "zod";
 
-  return "error";
+// TODO: バリデーション緩いので条件追加する
+const FormSchema = z.object({
+  email: z.string().email(),
+  password: z.string(),
+});
+
+export type State =
+  | {
+      email?: string[];
+      password?: string[];
+    }
+  | undefined;
+
+export async function loginAction(prevState: State, formData: FormData) {
+  const validatedFields = FormSchema.safeParse({
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+
+  console.log("submit", validatedFields);
+
+  if (!validatedFields.success) {
+    return validatedFields.error.flatten().fieldErrors;
+  }
+
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 }

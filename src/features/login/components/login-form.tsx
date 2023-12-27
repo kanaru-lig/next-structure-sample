@@ -1,18 +1,39 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
-import { Button, TextField } from "@/components/digital-agency";
+import { Button, Label, Tag, TextField } from "@/components/digital-agency";
 import { loginAction } from "../libs/login-action";
 
 export function LoginForm() {
-  const [errorMessage, dispatch] = useFormState(loginAction, undefined);
+  const [errors, dispatch] = useFormState(loginAction, undefined);
+  console.log(errors);
   return (
-    <form action={dispatch} className="p-4">
+    <form action={dispatch} className="p-4 space-y-6">
       login form
-      <p>メールアドレス</p>
-      <TextField name="email" type="email" />
-      <p>パスワード</p>
-      <TextField name="password" type="password" />
+      <div className="space-y-2">
+        <Label>
+          メールアドレス
+          <Tag isRequired>必須</Tag>
+        </Label>
+        <TextField
+          name="email"
+          type="email"
+          required
+          isError={!!errors?.email}
+        />
+      </div>
+      <div className="space-y-2">
+        <Label>
+          パスワード
+          <Tag isRequired>必須</Tag>
+        </Label>
+        <TextField
+          name="password"
+          type="password"
+          required
+          isError={!!errors?.password}
+        />
+      </div>
       <LoginButton />
     </form>
   );
@@ -22,8 +43,8 @@ function LoginButton() {
   const { pending } = useFormStatus();
 
   return (
-    <Button aria-disabled={pending} size="md" variant="primary">
-      Log in
+    <Button disabled={pending} size="md" variant="primary">
+      ログイン
     </Button>
   );
 }
