@@ -4,12 +4,21 @@ export type RadioProps = ComponentProps<"input"> & {
   isError?: boolean;
 };
 
-export const Radio = forwardRef<HTMLInputElement, RadioProps>((props, ref) => {
+export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
+  props,
+  ref
+) {
   const { children, id, isError, ...rest } = props;
 
   return (
     <label className={`flex w-fit items-center gap-4 p-1`} htmlFor={id}>
-      <input className={`peer sr-only`} id={id} ref={ref} type="radio" {...rest} />
+      <input
+        className={`peer sr-only`}
+        id={id}
+        ref={ref}
+        type="radio"
+        {...rest}
+      />
 
       <svg
         aria-hidden={true}

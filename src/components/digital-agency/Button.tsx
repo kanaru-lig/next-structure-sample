@@ -65,7 +65,7 @@ export type ButtonProps = ComponentProps<"button"> & {
   size: ButtonSize;
 };
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button(props, ref) {
   const { children, className, variant, size, ...rest } = props;
 
   return (
