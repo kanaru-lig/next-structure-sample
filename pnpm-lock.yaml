@@ -16,6 +16,9 @@ dependencies:
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
+  '@digital-go-jp/tailwind-theme-plugin':
+    specifier: ^0.1.7
+    version: 0.1.7(tailwindcss@3.4.0)
   '@storybook/addon-essentials':
     specifier: ^7.6.6
     version: 7.6.6(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
@@ -1439,6 +1442,15 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@digital-go-jp/tailwind-theme-plugin@0.1.7(tailwindcss@3.4.0):
+    resolution: {integrity: sha512-BB61n3p5fAhwWw9l+KRxO/cyJh2SY9U1Uk3XjAJYdMkeReR4aPmL+2aWYcI0UIS/7iDs39on1X4GLMrqAK+dvw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      tailwindcss: ^3.4.0
+    dependencies:
+      tailwindcss: 3.4.0
+    dev: true
 
   /@discoveryjs/json-ext@0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
