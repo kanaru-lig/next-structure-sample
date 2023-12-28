@@ -6,7 +6,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "serve out",
-    "lint": "next lint",
+    "check": "prettier --check . && next lint",
     "format": "prettier --write . && next lint --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
