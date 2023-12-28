@@ -36,5 +36,5 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
         </svg>
       </div>
     );
-  }
+  },
 );

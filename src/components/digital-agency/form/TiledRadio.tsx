@@ -85,5 +85,5 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
         {children}
       </label>
     );
-  }
+  },
 );

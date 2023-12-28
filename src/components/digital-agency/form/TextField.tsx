@@ -19,5 +19,5 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
         {...rest}
       />
     );
-  }
+  },
 );

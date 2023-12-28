@@ -8,7 +8,7 @@ export type EmergencyBannerProps<T extends ElementType> = Omit<
 };
 
 export const EmergencyBanner = <T extends ElementType>(
-  props: EmergencyBannerProps<T>
+  props: EmergencyBannerProps<T>,
 ) => {
   const { as, className, children, ...rest } = props;
 

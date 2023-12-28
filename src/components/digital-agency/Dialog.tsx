@@ -29,5 +29,5 @@ export const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
         </div>
       </dialog>
     );
-  }
+  },
 );

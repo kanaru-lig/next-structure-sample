@@ -28,7 +28,7 @@ export const Pagination = (props: PaginationProps) => {
           onClick={() => props.onItemClicked(i)}
         >
           {i}
-        </button>
+        </button>,
       );
       if (items.length >= 3) {
         break;
@@ -40,7 +40,7 @@ export const Pagination = (props: PaginationProps) => {
   const getRightSideItems = (
     mode: PaginationMode,
     current: number,
-    last: number
+    last: number,
   ) => {
     if (mode === "simple" || current >= last) {
       return [];
@@ -56,7 +56,7 @@ export const Pagination = (props: PaginationProps) => {
           onClick={() => props.onItemClicked(i)}
         >
           {i}
-        </button>
+        </button>,
       );
       if (items.length >= 3) {
         break;
@@ -69,7 +69,7 @@ export const Pagination = (props: PaginationProps) => {
   const rightSideItems = getRightSideItems(
     props.mode,
     props.currentPage,
-    props.lastPage
+    props.lastPage,
   );
 
   return (
