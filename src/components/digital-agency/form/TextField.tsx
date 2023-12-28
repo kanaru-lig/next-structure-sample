@@ -11,10 +11,10 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
     return (
       <input
         className={`${
-          isError ? "border-error border-2" : "border-field border"
+          isError ? "border-2 border-error" : "border border-field"
         } ${
           className ?? ""
-        } rounded-8 text-std-16N-7 text-body focus:outline-focused disabled:border-disabled disabled:bg-secondary h-14 w-full bg-white px-4 py-[14.5px] focus:border-2`}
+        } focus:outline-focused h-14 w-full rounded-8 bg-white px-4 py-[14.5px] text-std-16N-7 text-body focus:border-2 disabled:border-disabled disabled:bg-secondary`}
         ref={ref}
         {...rest}
       />

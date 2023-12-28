@@ -42,8 +42,8 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
     return (
       <label
         className={`${
-          isError ? "border-error border-2" : "border-field border"
-        } rounded-8 flex items-center gap-4 p-4 focus-within:outline-focused [&:has(input:checked)]:border-selected [&:has(input:disabled)]:border-disabled cursor-pointer focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 [&:has(input:checked)]:border-2 [&:has(input:disabled)]:cursor-default [&:has(input:disabled)]:border`}
+          isError ? "border-2 border-error" : "border border-field"
+        } focus-within:outline-focused flex cursor-pointer items-center gap-4 rounded-8 p-4 focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 [&:has(input:checked)]:border-2 [&:has(input:checked)]:border-selected [&:has(input:disabled)]:cursor-default [&:has(input:disabled)]:border [&:has(input:disabled)]:border-disabled`}
         htmlFor={id}
       >
         <input
@@ -56,7 +56,7 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
 
         <svg
           aria-hidden={true}
-          className="peer-checked:fill-sea-800 hidden peer-checked:inline-block"
+          className="hidden peer-checked:inline-block peer-checked:fill-sea-800"
           fill="none"
           height="24"
           viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
         <svg
           className={`${
             isError ? "fill-error-1" : "fill-sumi-900"
-          } peer-disabled:fill-sumi-500 peer-checked:hidden`}
+          } peer-checked:hidden peer-disabled:fill-sumi-500`}
           height="24"
           viewBox="0 0 24 24"
           width="24"

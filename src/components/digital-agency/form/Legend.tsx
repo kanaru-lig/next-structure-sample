@@ -14,7 +14,7 @@ export const Legend = (props: LegendlProps) => {
         isDisabled ? "text-disabled" : ""
       } ${
         className ?? ""
-      } text-label-lg text-body flex w-fit items-center gap-2`}
+      } flex w-fit items-center gap-2 text-label-lg text-body`}
       {...rest}
     >
       {children}

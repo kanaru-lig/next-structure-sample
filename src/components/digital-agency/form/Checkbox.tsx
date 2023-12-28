@@ -20,7 +20,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
 
         <svg
           aria-hidden={true}
-          className="peer-checked:fill-sea-800 peer-focus:outline-focused hidden flex-none peer-checked:inline-block peer-focus:rounded-[4px] peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1"
+          className="peer-focus:outline-focused hidden flex-none peer-checked:inline-block peer-checked:fill-sea-800 peer-focus:rounded-[4px] peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1"
           fill="none"
           height="24"
           viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
           aria-hidden={true}
           className={`${
             isError ? "fill-sun-800" : "fill-sumi-900"
-          } flex-none peer-focus:outline-focused peer-disabled:fill-sumi-500 peer-checked:hidden peer-focus:rounded-[4px] peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1`}
+          } peer-focus:outline-focused flex-none peer-checked:hidden peer-focus:rounded-[4px] peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1 peer-disabled:fill-sumi-500`}
           fill="none"
           height="24"
           viewBox="0 0 24 24"

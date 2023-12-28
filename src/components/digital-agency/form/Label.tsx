@@ -11,7 +11,7 @@ export const Label = (props: LabelProps) => {
     <label
       className={`${isDisabled ? "!text-disabled" : "text-body"} ${
         className ?? ""
-      } text-label-lg flex w-fit items-center gap-2`}
+      } flex w-fit items-center gap-2 text-label-lg`}
       {...rest}
     >
       {children}

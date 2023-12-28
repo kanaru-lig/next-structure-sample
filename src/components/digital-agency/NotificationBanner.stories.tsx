@@ -6,7 +6,7 @@ function Component() {
   return (
     <div className="flex flex-col gap-8">
       <NotificationBanner borderStyle="standard" className="border-sumi-1000">
-        <h3 className="text-std-22B-5 mb-5 font-bold">バナータイトル</h3>
+        <h3 className="mb-5 text-std-22B-5 font-bold">バナータイトル</h3>
         <p>バナーディスクリプション</p>
       </NotificationBanner>
 
@@ -14,7 +14,7 @@ function Component() {
         borderStyle="color-chip"
         className="border-forest-600"
       >
-        <h3 className="text-std-22B-5 mb-5 font-bold">バナータイトル</h3>
+        <h3 className="mb-5 text-std-22B-5 font-bold">バナータイトル</h3>
         <p>バナーディスクリプション</p>
       </NotificationBanner>
     </div>

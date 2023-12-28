@@ -39,7 +39,7 @@ export const Breadcrumbs = (props: BreadcrumbsProps) => {
             return (
               <li
                 aria-current="page"
-                className="text-label-lg text-description inline break-all"
+                className="inline break-all text-label-lg text-description"
                 key={`breadcrumbs-item-${index}`}
               >
                 {item}

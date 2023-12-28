@@ -12,10 +12,10 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
       <div className="flex flex-col gap-2">
         <textarea
           className={`${
-            isError ? "border-error border-2" : "border-field border"
+            isError ? "border-2 border-error" : "border border-field"
           } ${
             className ?? ""
-          } rounded-8 text-std-16N-7 text-body focus:outline-focused disabled:border-disabled disabled:bg-secondary box-border w-full bg-white p-3 focus:outline-2`}
+          } focus:outline-focused box-border w-full rounded-8 bg-white p-3 text-std-16N-7 text-body focus:outline-2 disabled:border-disabled disabled:bg-secondary`}
           ref={ref}
           {...rest}
         />

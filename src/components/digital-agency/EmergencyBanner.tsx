@@ -16,7 +16,7 @@ export const EmergencyBanner = <T extends ElementType>(
 
   return (
     <Tag
-      className={`${className ?? ""} border-sun-800 border-[6px] p-8`}
+      className={`${className ?? ""} border-[6px] border-sun-800 p-8`}
       {...rest}
     >
       {children}

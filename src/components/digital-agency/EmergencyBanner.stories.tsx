@@ -6,23 +6,23 @@ function Component() {
   return (
     <div className="flex flex-col gap-8">
       <EmergencyBanner as="div">
-        <h3 className="text-heading-xs text-sun-800 font-bold">
+        <h3 className="text-heading-xs font-bold text-sun-800">
           バナータイトル
         </h3>
-        <p className="text-std-16N-7 mt-2">
+        <p className="mt-2 text-std-16N-7">
           <time dateTime="2023-01-01">年月日</time>
         </p>
-        <p className="text-std-17N-7 mt-8">バナーデスクリプション</p>
+        <p className="mt-8 text-std-17N-7">バナーデスクリプション</p>
       </EmergencyBanner>
 
-      <EmergencyBanner as="a" className="hover:border-sun-1000 group" href="#">
-        <h3 className="text-heading-xs text-sun-800 group-hover:text-sun-1000 font-bold">
+      <EmergencyBanner as="a" className="group hover:border-sun-1000" href="#">
+        <h3 className="text-heading-xs font-bold text-sun-800 group-hover:text-sun-1000">
           バナータイトル
         </h3>
-        <p className="text-std-16N-7 mt-2">
+        <p className="mt-2 text-std-16N-7">
           <time dateTime="2023-01-01">年月日</time>
         </p>
-        <p className="text-std-17N-7 mt-8">バナーデスクリプション</p>
+        <p className="mt-8 text-std-17N-7">バナーデスクリプション</p>
       </EmergencyBanner>
     </div>
   );

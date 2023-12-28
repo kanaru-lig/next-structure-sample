@@ -23,7 +23,7 @@ export const Dialog = forwardRef<HTMLDialogElement, DialogProps>(
             e.stopPropagation();
           }}
         >
-          <div className="border-solid-grey-200 flex w-full flex-col items-center gap-4 rounded-[12px] border bg-white p-6">
+          <div className="flex w-full flex-col items-center gap-4 rounded-[12px] border border-solid-grey-200 bg-white p-6">
             {children}
           </div>
         </div>

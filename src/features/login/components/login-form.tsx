@@ -8,7 +8,7 @@ export function LoginForm() {
   const [errors, dispatch] = useFormState(loginAction, undefined);
   console.log(errors);
   return (
-    <form action={dispatch} className="p-4 space-y-6">
+    <form action={dispatch} className="space-y-6 p-4">
       login form
       <div className="space-y-2">
         <Label>

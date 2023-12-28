@@ -12,10 +12,10 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
       <div className="relative h-14">
         <select
           className={`${
-            isError ? "border-error border-2" : "border-field border"
+            isError ? "border-2 border-error" : "border border-field"
           } ${
             className ?? ""
-          } rounded-8 text-std-16N-7 text-body focus:outline-focused disabled:border-disabled disabled:bg-secondary h-full w-full appearance-none bg-white px-4 py-[14.5px] focus:outline-2`}
+          } focus:outline-focused h-full w-full appearance-none rounded-8 bg-white px-4 py-[14.5px] text-std-16N-7 text-body focus:outline-2 disabled:border-disabled disabled:bg-secondary`}
           ref={ref}
           {...rest}
         >

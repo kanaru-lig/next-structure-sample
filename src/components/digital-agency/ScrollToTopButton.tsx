@@ -16,7 +16,7 @@ export const ScrollToTopButton = (props: ScrollToTopButtonProps) => {
     >
       <svg
         aria-hidden
-        className="group-hover:fill-blue-1000 group-active:fill-blue-1200 fill-blue-900"
+        className="fill-blue-900 group-hover:fill-blue-1000 group-active:fill-blue-1200"
         fill="none"
         height="16"
         viewBox="0 0 15 16"

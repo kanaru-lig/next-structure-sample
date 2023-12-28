@@ -20,7 +20,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
 
         <svg
           aria-hidden={true}
-          className="peer-checked:fill-sea-800 peer-focus:rounded-8 peer-focus:outline-focused hidden flex-none peer-checked:inline-block peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1"
+          className="peer-focus:outline-focused hidden flex-none peer-checked:inline-block peer-checked:fill-sea-800 peer-focus:rounded-8 peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1"
           fill="none"
           height="24"
           viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
           aria-hidden={true}
           className={`${
             isError ? "fill-sun-800" : "fill-sumi-900"
-          } peer-focus:rounded-8 peer-focus:outline-focused peer-disabled:fill-sumi-500 flex-none peer-checked:hidden peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1`}
+          } peer-focus:outline-focused flex-none peer-checked:hidden peer-focus:rounded-8 peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1 peer-disabled:fill-sumi-500`}
           fill="none"
           height="24"
           viewBox="0 0 24 24"
