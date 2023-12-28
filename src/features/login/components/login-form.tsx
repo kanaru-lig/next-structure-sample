@@ -9,8 +9,7 @@ export function LoginForm() {
   const [errors, dispatch] = useFormState(loginAction, undefined);
 
   return (
-    <form action={dispatch} className="space-y-6 p-4">
-      login form
+    <form action={dispatch} className="space-y-6">
       <FormField
         label="メールアドレス"
         name="email"
