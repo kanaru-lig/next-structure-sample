@@ -1,5 +1,3 @@
-"use server";
-
 import { z } from "zod";
 
 // TODO: バリデーション緩いので条件追加する
