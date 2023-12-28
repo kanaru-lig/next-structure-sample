@@ -2,7 +2,7 @@ import { z } from "zod";
 
 // TODO: バリデーション緩いので条件追加する
 const FormSchema = z.object({
-  email: z.string().email(),
+  email: z.string().email("メールアドレス形式が正しくありません"),
   password: z.string(),
 });
 
@@ -26,4 +26,6 @@ export async function loginAction(prevState: State, formData: FormData) {
   }
 
   await new Promise((resolve) => setTimeout(resolve, 3000));
+
+  console.log("success");
 }
