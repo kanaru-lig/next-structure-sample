@@ -12,17 +12,17 @@ export const TiledRadioItem = (props: TiledRadioItemProps) => {
   return (
     <span className="flex flex-1 flex-col">
       <span
-        className={`text-std-16N-7 text-body ${
+        className={`${
           isDisabled ? "text-disabled" : ""
-        }`}
+        } text-std-16N-7 text-body`}
       >
         {props.title}
       </span>
       {props.description && (
         <span
-          className={`text-caption-lg text-description ${
+          className={`${
             isDisabled ? "text-disabled" : ""
-          }`}
+          } text-caption-lg text-description`}
         >
           {props.description}
         </span>
@@ -41,28 +41,13 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
 
     return (
       <label
-        className={`
-        rounded-8
-        flex
-        items-center
-        gap-4
-        p-4
-        ${isError ? "border-error border-2" : "border-field border"}
-        focus-within:outline-focused
-        [&:has(input:checked)]:border-selected
-        [&:has(input:disabled)]:border-disabled
-        cursor-pointer
-        focus-within:outline
-        focus-within:outline-2
-        focus-within:outline-offset-2
-        [&:has(input:checked)]:border-2
-        [&:has(input:disabled)]:cursor-default
-        [&:has(input:disabled)]:border
-      `}
+        className={`${
+          isError ? "border-error border-2" : "border-field border"
+        } rounded-8 flex items-center gap-4 p-4 focus-within:outline-focused [&:has(input:checked)]:border-selected [&:has(input:disabled)]:border-disabled cursor-pointer focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 [&:has(input:checked)]:border-2 [&:has(input:disabled)]:cursor-default [&:has(input:disabled)]:border`}
         htmlFor={id}
       >
         <input
-          className={`peer sr-only`}
+          className="peer sr-only"
           id={id}
           ref={ref}
           type="radio"
@@ -71,11 +56,7 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
 
         <svg
           aria-hidden={true}
-          className={`
-          peer-checked:fill-sea-800
-          hidden
-          peer-checked:inline-block
-        `}
+          className="peer-checked:fill-sea-800 hidden peer-checked:inline-block"
           fill="none"
           height="24"
           viewBox="0 0 24 24"
@@ -88,11 +69,9 @@ export const TiledRadio = forwardRef<HTMLInputElement, TiledRadioProps>(
         </svg>
 
         <svg
-          className={`
-          ${isError ? "fill-error-1" : "fill-sumi-900"}
-          peer-disabled:fill-sumi-500
-          peer-checked:hidden
-        `}
+          className={`${
+            isError ? "fill-error-1" : "fill-sumi-900"
+          } peer-disabled:fill-sumi-500 peer-checked:hidden`}
           height="24"
           viewBox="0 0 24 24"
           width="24"

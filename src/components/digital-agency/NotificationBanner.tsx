@@ -9,13 +9,18 @@ export const NotificationBanner = (props: NotificationBannerProps) => {
 
   if (borderStyle === "standard") {
     return (
-      <div className={`border-[3px] p-6 ${className}`} {...rest}>
+      <div className={`${className ?? ""} border-[3px] p-6`} {...rest}>
         {children}
       </div>
     );
   } else {
     return (
-      <div className={`border-y-[2px] border-l-[16px] border-r-[2px] py-6 pl-6 pr-[30px] ${className}`} {...rest}>
+      <div
+        className={`${
+          className ?? ""
+        } border-y-[2px] border-l-[16px] border-r-[2px] py-6 pl-6 pr-[30px]`}
+        {...rest}
+      >
         {children}
       </div>
     );

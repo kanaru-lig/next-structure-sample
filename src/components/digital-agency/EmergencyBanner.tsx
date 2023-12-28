@@ -1,16 +1,24 @@
 import { ComponentProps, ElementType } from "react";
 
-export type EmergencyBannerProps<T extends ElementType> = Omit<ComponentProps<T>, keyof { as?: T }> & {
+export type EmergencyBannerProps<T extends ElementType> = Omit<
+  ComponentProps<T>,
+  keyof { as?: T }
+> & {
   as?: T;
 };
 
-export const EmergencyBanner = <T extends ElementType>(props: EmergencyBannerProps<T>) => {
+export const EmergencyBanner = <T extends ElementType>(
+  props: EmergencyBannerProps<T>
+) => {
   const { as, className, children, ...rest } = props;
 
   const Tag = as ?? "div";
 
   return (
-    <Tag className={`border-sun-800 border-[6px] p-8 ${className}`} {...rest}>
+    <Tag
+      className={`${className ?? ""} border-sun-800 border-[6px] p-8`}
+      {...rest}
+    >
       {children}
     </Tag>
   );

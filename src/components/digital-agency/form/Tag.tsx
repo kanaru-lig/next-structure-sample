@@ -9,11 +9,9 @@ export const Tag = (props: TagProps) => {
 
   return (
     <span
-      className={`
-      text-caption-lg
-      ${isRequired ? "text-red-800" : "text-description"}
-      ${className ?? ""}
-    `}
+      className={`${isRequired ? "text-red-800" : "text-description"} ${
+        className ?? ""
+      } text-caption-lg`}
       {...rest}
     >
       {children}

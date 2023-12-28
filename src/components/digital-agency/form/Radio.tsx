@@ -11,9 +11,9 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
   const { children, id, isError, ...rest } = props;
 
   return (
-    <label className={`flex w-fit items-center gap-4 p-1`} htmlFor={id}>
+    <label className="flex w-fit items-center gap-4 p-1" htmlFor={id}>
       <input
-        className={`peer sr-only`}
+        className="peer sr-only"
         id={id}
         ref={ref}
         type="radio"
@@ -22,17 +22,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
 
       <svg
         aria-hidden={true}
-        className={`
-          peer-checked:fill-sea-800
-          peer-focus:rounded-8
-          peer-focus:outline-focused
-          hidden
-          flex-none
-          peer-checked:inline-block
-          peer-focus:outline
-          peer-focus:outline-2
-          peer-focus:-outline-offset-1
-        `}
+        className="peer-checked:fill-sea-800 peer-focus:rounded-8 peer-focus:outline-focused hidden flex-none peer-checked:inline-block peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1"
         fill="none"
         height="24"
         viewBox="0 0 24 24"
@@ -46,17 +36,9 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
 
       <svg
         aria-hidden={true}
-        className={`
-          ${isError ? "fill-sun-800" : "fill-sumi-900"}
-          peer-focus:rounded-8
-          peer-focus:outline-focused
-          peer-disabled:fill-sumi-500
-          flex-none
-          peer-checked:hidden
-          peer-focus:outline
-          peer-focus:outline-2
-          peer-focus:-outline-offset-1
-        `}
+        className={`${
+          isError ? "fill-sun-800" : "fill-sumi-900"
+        } peer-focus:rounded-8 peer-focus:outline-focused peer-disabled:fill-sumi-500 flex-none peer-checked:hidden peer-focus:outline peer-focus:outline-2 peer-focus:-outline-offset-1`}
         fill="none"
         height="24"
         viewBox="0 0 24 24"
@@ -69,11 +51,9 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(function Radio(
       </svg>
 
       <span
-        className={`
-          text-std-16N-7
-          ${isError ? "text-alert" : "text-body"}
-          peer-disabled:text-disabled
-        `}
+        className={`${
+          isError ? "text-alert" : "text-body"
+        } text-std-16N-7 peer-disabled:text-disabled`}
       >
         {children}
       </span>

@@ -9,12 +9,9 @@ export const Label = (props: LabelProps) => {
 
   return (
     <label
-      className={`
-        text-label-lg flex w-fit items-center
-        gap-2
-        ${isDisabled ? "!text-disabled" : "text-body"}
-        ${className ?? ""}
-      `}
+      className={`${isDisabled ? "!text-disabled" : "text-body"} ${
+        className ?? ""
+      } text-label-lg flex w-fit items-center gap-2`}
       {...rest}
     >
       {children}

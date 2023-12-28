@@ -10,14 +10,11 @@ export const Legend = (props: LegendlProps) => {
 
   return (
     <legend
-      className={`
-        text-label-lg text-body flex w-fit
-        items-center
-        gap-2
-        ${isError ? "text-alert" : ""}
-        ${isDisabled ? "text-disabled" : ""}
-        ${className ?? ""}
-      `}
+      className={`${isError ? "text-alert" : ""} ${
+        isDisabled ? "text-disabled" : ""
+      } ${
+        className ?? ""
+      } text-label-lg text-body flex w-fit items-center gap-2`}
       {...rest}
     >
       {children}

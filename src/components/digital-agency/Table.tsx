@@ -7,7 +7,7 @@ export const Table = (props: TableProps) => {
 
   return (
     <div className="w-full overflow-x-auto">
-      <table className={`whitespace-nowrap ${className ?? ""}`} {...rest}>
+      <table className={`${className ?? ""} whitespace-nowrap`} {...rest}>
         {children}
       </table>
     </div>
@@ -38,7 +38,8 @@ export const Tr = (props: TrProps) => {
   return <tr {...rest}>{children}</tr>;
 };
 
-export const thStyle = `border border-solid-grey-200 bg-tertiary px-4 py-6 text-left text-std-16N-7 text-body`;
+export const thStyle =
+  "border border-solid-grey-200 bg-tertiary px-4 py-6 text-left text-std-16N-7 text-body";
 
 export type ThProps = ComponentProps<"th">;
 
@@ -52,7 +53,8 @@ export const Th = (props: ThProps) => {
   );
 };
 
-export const tdStyle = `border border-solid-grey-200 px-4 py-6 text-left text-std-16N-7 text-body`;
+export const tdStyle =
+  "border border-solid-grey-200 px-4 py-6 text-left text-std-16N-7 text-body";
 
 export type TdProps = ComponentProps<"td">;
 

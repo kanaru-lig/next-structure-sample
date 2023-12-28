@@ -1,6 +1,6 @@
 import { ComponentProps } from "react";
 
-export const ulStyle = `list-disc pl-8 [&_&]:list-circle [&_&_&]:list-square`;
+export const ulStyle = "list-disc pl-8 [&_&]:list-circle [&_&_&]:list-square";
 
 export type UlProps = ComponentProps<"ul">;
 

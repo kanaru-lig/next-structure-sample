@@ -5,10 +5,10 @@ import React from "react";
 function Component() {
   return (
     <div className="flex flex-col gap-8">
-      <HamburgerButton align={"row"} isOpen={false} label={"メニュー"} />
-      <HamburgerButton align={"row"} isOpen={true} label={"閉じる"} />
-      <HamburgerButton align={"col"} isOpen={false} label={"メニュー"} />
-      <HamburgerButton align={"col"} isOpen={true} label={"閉じる"} />
+      <HamburgerButton align="row" isOpen={false} label="メニュー" />
+      <HamburgerButton align="row" isOpen={true} label="閉じる" />
+      <HamburgerButton align="col" isOpen={false} label="メニュー" />
+      <HamburgerButton align="col" isOpen={true} label="閉じる" />
     </div>
   );
 }
