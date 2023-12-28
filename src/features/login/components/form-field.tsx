@@ -27,7 +27,9 @@ export function FormField({
         required={required}
         isError={!!errors}
       />
-      {errors?.map((error) => <ErrorText key={error}>{error}</ErrorText>)}
+      <div>
+        {errors?.map((error) => <ErrorText key={error}>{error}</ErrorText>)}
+      </div>
     </div>
   );
 }
