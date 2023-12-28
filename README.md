@@ -3,7 +3,7 @@
 ```
 src/
 ├ components/ # 共通パーツ
-│ └ digiral-agency/ # デジタル庁提供パーツ
+│ └ digital-agency/ # デジタル庁提供パーツ
 ├
 ├ features/ # 機能毎のuiやロジックを入れる
 │ ├ login/
