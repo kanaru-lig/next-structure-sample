@@ -1,6 +1,8 @@
+"use client";
+
 import { ReactNode } from "react";
 import { useFormStatus } from "react-dom";
-import { Button } from "@/components/digital-agency";
+import { Button } from "@/components";
 
 type Props = {
   children: ReactNode;

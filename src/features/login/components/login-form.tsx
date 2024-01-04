@@ -1,9 +1,8 @@
 "use client";
 
 import { useFormState } from "react-dom";
+import { FormField, SubmitButton } from "@/components";
 import { loginAction } from "../libs/login-action";
-import { FormField } from "./form-field";
-import { SubmitButton } from "./submit-button";
 
 export function LoginForm() {
   const [errors, dispatch] = useFormState(loginAction, undefined);

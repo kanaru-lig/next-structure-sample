@@ -1,9 +1,10 @@
-import { ErrorText, Label, Tag, TextField } from "@/components/digital-agency";
+import type { HTMLInputTypeAttribute } from "react";
+import { ErrorText, Label, Tag, TextField } from "@/components";
 
 type Props = {
   label: string;
   name: string;
-  type: "email" | "password";
+  type: HTMLInputTypeAttribute;
   required?: boolean;
   errors: string[] | undefined;
 };
